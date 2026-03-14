@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 黑白色主题颜色变量 */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #666666;
+  --accent-color: #999999;
+  --bg-gradient-start: #f0f0f0;
+  --bg-gradient-end: #e0e0e0;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --border-color: #cccccc;
+  --background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  --foreground: var(--text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #cccccc;
+    --secondary-color: #999999;
+    --accent-color: #666666;
+    --bg-gradient-start: #1a1a1a;
+    --bg-gradient-end: #0a0a0a;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #444444;
+    --background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    --foreground: var(--text-primary);
+  }
+}
+
+/* 像素小猫背景 */
+.pixel-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.pixel-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/pixel-cats-group.svg');
+  background-size: 256px 256px;
+  background-repeat: repeat;
+  opacity: 0.10;
+  z-index: 0;
+  animation: float 8s ease-in-out infinite;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .pixel-bg::before {
+    background-size: 192px 192px;
+    opacity: 0.06;
+  }
+}
+
+/* 全局样式 */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* 自定义动画 - 简化版 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 浮动动画 - 简化版 */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-gradient-start);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+}
+
+/* 选中文本样式 */
+::selection {
+  background: var(--primary-color);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--primary-color);
+  color: white;
+}

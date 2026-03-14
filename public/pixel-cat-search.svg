@@ -1,0 +1,60 @@
+<svg width="520" height="64" viewBox="0 0 520 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- 猫尾巴 -->
+  <rect x="0" y="20" width="8" height="4" fill="#FFD700" />
+  <rect x="4" y="16" width="4" height="4" fill="#FFD700" />
+  
+  <!-- 猫身体（缩短长度） -->
+  <rect x="12" y="8" width="508" height="48" fill="#FFD700" />
+  
+  <!-- 身体上的花纹 -->
+  <rect x="20" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="20" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="40" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="40" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="60" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="60" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="80" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="80" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="100" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="100" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="120" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="120" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="140" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="140" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="160" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="160" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="180" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="180" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="200" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="200" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="220" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="220" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="240" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="240" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="260" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="260" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="280" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="280" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="300" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="300" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="320" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="320" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="340" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="340" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="360" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="360" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="380" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="380" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="400" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="400" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="420" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="420" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="440" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="440" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="460" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="460" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="480" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="480" y="36" width="4" height="4" fill="#FF8C00" />
+  <rect x="500" y="20" width="4" height="4" fill="#FF8C00" />
+  <rect x="500" y="36" width="4" height="4" fill="#FF8C00" />
+</svg>

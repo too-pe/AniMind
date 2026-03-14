@@ -1,0 +1,114 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* 定义跳舞动画 */
+    @keyframes dance {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-5px) rotate(5deg);
+      }
+      50% {
+        transform: translateY(0) rotate(0deg);
+      }
+      75% {
+        transform: translateY(-5px) rotate(-5deg);
+      }
+    }
+    
+    /* 定义尾巴摇摆动画 */
+    @keyframes tailWag {
+      0%, 100% {
+        transform: rotate(0deg);
+      }
+      50% {
+        transform: rotate(15deg);
+      }
+    }
+    
+    /* 定义耳朵抖动动画 */
+    @keyframes earWiggle {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-2px);
+      }
+    }
+    
+    /* 应用动画 */
+    .cat {
+      animation: dance 1s ease-in-out infinite;
+    }
+    
+    .tail {
+      animation: tailWag 0.5s ease-in-out infinite;
+      transform-origin: left center;
+    }
+    
+    .ear-left,
+    .ear-right {
+      animation: earWiggle 0.7s ease-in-out infinite;
+    }
+    
+    .ear-left {
+      transform-origin: bottom right;
+    }
+    
+    .ear-right {
+      transform-origin: bottom left;
+    }
+  </style>
+  
+  <!-- 跳舞的白色小猫 -->
+  <g class="cat">
+    <!-- 身体 -->
+    <rect x="16" y="24" width="32" height="24" fill="#FFFFFF" />
+    
+    <!-- 头部 -->
+    <rect x="20" y="8" width="24" height="16" fill="#FFFFFF" />
+    
+    <!-- 耳朵 -->
+    <g class="ear-left">
+      <rect x="20" y="2" width="6" height="6" fill="#FFFFFF" />
+      <rect x="22" y="0" width="2" height="2" fill="#FFFFFF" />
+    </g>
+    
+    <g class="ear-right">
+      <rect x="38" y="2" width="6" height="6" fill="#FFFFFF" />
+      <rect x="38" y="0" width="2" height="2" fill="#FFFFFF" />
+    </g>
+    
+    <!-- 眼睛 -->
+    <rect x="24" y="14" width="4" height="4" fill="#000000" />
+    <rect x="36" y="14" width="4" height="4" fill="#000000" />
+    
+    <!-- 鼻子 -->
+    <rect x="32" y="18" width="2" height="2" fill="#FF69B4" />
+    
+    <!-- 嘴巴 -->
+    <rect x="30" y="20" width="2" height="2" fill="#000000" />
+    <rect x="34" y="20" width="2" height="2" fill="#000000" />
+    <rect x="32" y="22" width="2" height="1" fill="#000000" />
+    
+    <!-- 胡须 -->
+    <rect x="16" y="18" width="4" height="1" fill="#000000" />
+    <rect x="16" y="20" width="4" height="1" fill="#000000" />
+    <rect x="44" y="18" width="4" height="1" fill="#000000" />
+    <rect x="44" y="20" width="4" height="1" fill="#000000" />
+    
+    <!-- 前爪 -->
+    <rect x="18" y="44" width="6" height="4" fill="#FFFFFF" />
+    <rect x="40" y="44" width="6" height="4" fill="#FFFFFF" />
+    
+    <!-- 后腿 -->
+    <rect x="20" y="48" width="6" height="4" fill="#FFFFFF" />
+    <rect x="38" y="48" width="6" height="4" fill="#FFFFFF" />
+    
+    <!-- 尾巴 -->
+    <g class="tail">
+      <rect x="48" y="32" width="8" height="2" fill="#FFFFFF" />
+      <rect x="56" y="30" width="2" height="6" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>
